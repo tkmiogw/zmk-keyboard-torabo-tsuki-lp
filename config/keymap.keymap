@@ -4,6 +4,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&trackball {
+    scroll-layers = <4>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
