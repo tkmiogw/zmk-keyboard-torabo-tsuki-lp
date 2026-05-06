@@ -4,10 +4,10 @@
     status = "okay";
     device = <&pointing_device>;
 
-    input-processors = <&zip_xy_scaler 1 4>;
+    input-processors = <&zip_xy_scaler 1 8>;
 
     scroller {
         layers = <4>;
-        input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_scaler 1 32>;
+        input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_scaler 1 64>;
     };
 };
