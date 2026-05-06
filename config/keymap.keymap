@@ -23,7 +23,7 @@
 &trans  &trans     &trans        &trans            &trans    &trans                                                         &trans       &trans  &trans     &trans    &trans                &trans
 &trans  &kp Q      &kp W         &kp E             &kp R     &kp T                                                          &kp Y        &kp U   &lt 4 I    &kp O     &kp P                 &trans
 &trans  &kp A      &kp S         &kp D             &kp F     &kp G        &trans                     &trans                 &kp H        &kp J   &kp K      &kp L     &kp SEMI              &trans
-&trans  &kp Z      &kp X         &kp C             &kp V     &kp B        &kp LA(LS(T))              &kp LS(LG(N5))         &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
+&trans  &kp Z      &kp X         &kp C             &kp V     &lt 5 B      &kp LA(LS(T))              &kp LS(LG(N5))         &kp N        &kp M   &kp COMMA  &kp DOT   &mt RIGHT_SHIFT FSLH  &trans
 &trans  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp BSPC  &lt 2 SPACE  &mt LEFT_SHIFT LANGUAGE_1  &mt RSHIFT LANGUAGE_2  &lt 3 ENTER  &trans  &trans     &kp RGUI  &kp RCTRL             &trans
             >;
         };
@@ -65,6 +65,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans        &trans        &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans        &trans        &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &trans
             >;
         };
     };
