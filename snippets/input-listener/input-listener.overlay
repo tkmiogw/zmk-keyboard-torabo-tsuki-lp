@@ -4,9 +4,7 @@
     status = "okay";
     device = <&pointing_device>;
 
-    cursor {
-        input-processors = <&zip_xy_scaler 1 4>;
-    };
+    input-processors = <&zip_xy_scaler 1 4>;
 
     scroller {
         layers = <4>;
