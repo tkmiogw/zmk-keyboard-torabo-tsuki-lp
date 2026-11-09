@@ -8,6 +8,17 @@
 #endif
 
 / {
+    behaviors {
+        z_mt: z_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Z Mod-Tap";
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -26,7 +37,7 @@
 &trans  &trans            &trans        &trans            &trans     &trans                                 &trans       &trans  &trans     &trans          &trans                &trans
 &trans  &kp Q             &kp W         &kp E             &kp R      &kp T                                  &kp Y        &kp U   &lt 4 I    &kp O           &kp P                 &trans
 &trans  &kp A             &kp S         &kp D             &kp F      &kp G        &trans     &trans         &kp H        &kp J   &kp K      &kp L           &kp SEMI              &trans
-&trans  &mt LEFT_SHIFT Z  &kp X         &kp C             &kp V      &lt 5 B      &kp MINUS  &kp EQUAL      &kp N        &kp M   &kp COMMA  &kp DOT         &mt RIGHT_SHIFT FSLH  &trans
+&trans  &z_mt LEFT_SHIFT Z  &kp X         &kp C             &kp V      &lt 5 B      &kp MINUS  &kp EQUAL      &kp N        &kp M   &kp COMMA  &kp DOT         &mt RIGHT_SHIFT FSLH  &trans
 &trans  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LANG2  &lt 2 SPACE  &lt 4 TAB  &kp BACKSPACE  &lt 3 ENTER  &trans  &trans     &kp LS(LG(N5))  &kp LS(LC(D))         &trans
 #if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
 &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &mkp MCLK
